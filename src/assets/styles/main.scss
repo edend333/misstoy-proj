@@ -1,0 +1,27 @@
+// main.scss
+
+// 1. Abstracts
+@import './abstracts/variables';
+@import './abstracts/mixins';
+@import './abstracts/functions';
+
+// 2. Base
+@import './base/reset';
+@import './base/base';
+
+// 3. Layout
+@import './layout/grid';
+@import './layout/header';
+
+// 4. Components
+@import './components/toyList';
+@import './components/toyPreview';
+@import './components/appHeader';
+@import './components/Pagination';
+
+
+// 5. Pages
+@import './pages/homePage';
+@import './pages/toyIndex';
+@import './pages/login.scss';
+@import './pages/toyEdit.scss';

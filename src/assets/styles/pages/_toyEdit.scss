@@ -1,0 +1,91 @@
+.toy-edit {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.toy-edit h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.toy-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.toy-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: #333;
+}
+
+.toy-form input[type="text"],
+.toy-form input[type="number"],
+.toy-form input[type="url"] {
+  padding: 0.6rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.toy-form input[type="text"]:focus,
+.toy-form input[type="number"]:focus,
+.toy-form input[type="url"]:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+.toy-form input[type="checkbox"] {
+  width: auto;
+  margin-top: 0.5rem;
+}
+
+.toy-form button {
+  padding: 0.75rem 1.5rem;
+  background: #4CAF50;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.toy-form button:hover {
+  background: #45a049;
+}
+
+.preview {
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.toy-form .checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.toy-form .checkbox-label input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 600px) {
+  .toy-edit {
+    padding: 1rem;
+  }
+}

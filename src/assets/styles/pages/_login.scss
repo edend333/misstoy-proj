@@ -1,0 +1,48 @@
+.login-page {
+  max-width: 400px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  text-align: center;
+
+  h1 {
+    color: #4a4a4a;
+    margin-bottom: 1.5rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    input {
+      padding: 0.75rem 1rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+
+      &:focus {
+        border-color: #7f5af0;
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(127, 90, 240, 0.2);
+      }
+    }
+
+    button {
+      padding: 0.75rem 1rem;
+      background: #7f5af0;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+
+      &:hover {
+        background: #6842d7;
+      }
+    }
+  }
+}

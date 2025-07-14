@@ -4,6 +4,7 @@ export const storageService = {
     post,
     put,
     remove,
+    getByCredentials
 }
 
 function query(entityType, delay = 300) {
@@ -62,3 +63,14 @@ function _makeId(length = 5) {
     }
     return text
 }
+
+function getByCredentials(entityType, credentials) {
+    return query(entityType).then(entities => {
+        return entities.find(entity =>
+            entity.username === credentials.username &&
+            entity.password === credentials.password
+        )
+    })
+}
+
+
